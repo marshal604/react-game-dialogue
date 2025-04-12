@@ -1,0 +1,42 @@
+/* DialogBox 元件專用樣式 */
+.dialogBox {
+  background-color: var(--dialogic-dialog-bg);
+  border: 2px solid var(--dialogic-dialog-border);
+  border-radius: var(--dialogic-dialog-radius);
+  font-family: var(--dialogic-font-dialog);
+  padding: 1rem;
+  width: var(--dialogic-dialog-width, 100%);
+  max-width: var(--dialogic-dialog-max-width, 800px);
+  height: var(--dialogic-dialog-height, auto);
+  min-height: var(--dialogic-dialog-min-height, 150px);
+  max-height: var(--dialogic-dialog-max-height, 200px);
+  margin: 0 auto;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: auto;
+}
+
+.characterName {
+  color: var(--dialogic-name-text);
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.dialogText {
+  color: var(--dialogic-dialog-text);
+}
+
+.continueIndicator {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  font-size: 1.2rem;
+  animation: pulse 1s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% { opacity: 0.5; }
+  50% { opacity: 1; }
+  100% { opacity: 0.5; }
+} 

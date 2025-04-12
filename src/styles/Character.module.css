@@ -1,0 +1,64 @@
+/* Character 元件專用樣式 */
+.character {
+  /* 預設尺寸 (桌面版) */
+  max-width: var(--dialogic-character-width-desktop, 33%);
+  max-height: var(--dialogic-character-height-desktop, 50vh);
+}
+
+
+.characterEnter {
+  animation-name: var(--dialogic-character-enter, fadeInLeft);
+  animation-duration: 0.5s;
+}
+
+.characterExit {
+  animation-name: var(--dialogic-character-exit, fadeOutRight);
+  animation-duration: 0.5s;
+}
+
+/* 角色出現/消失動畫 */
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeOutRight {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+}
+
+/* 平板設備 */
+@media screen and (max-width: 1024px) {
+  .character {
+    max-width: var(--dialogic-character-width-tablet, 50%);
+    max-height: var(--dialogic-character-height-tablet, 45vh);
+  }
+}
+
+/* 手機設備 - 橫向 */
+@media screen and (max-width: 768px) {
+  .character {
+    max-width: var(--dialogic-character-width-mobile, 70%);
+    max-height: var(--dialogic-character-height-mobile, 40vh);
+  }
+}
+
+/* 手機設備 - 直向 */
+@media screen and (max-width: 480px) {
+  .character {
+    max-width: var(--dialogic-character-width-mobile, 100%);
+    max-height: var(--dialogic-character-height-mobile, 35vh);
+  }
+} 

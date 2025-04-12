@@ -1,0 +1,60 @@
+/* DialogicContainer 元件專用樣式 */
+.container {
+  font-family: sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.charactersContainer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+}
+
+.dialogArea {
+  width: 100%;
+  background-color: var(--dialogic-dialog-area-bg, transparent);
+  padding: var(--dialogic-dialog-area-padding, 0.5rem 0);
+  margin-top: auto;
+  min-height: var(--dialogic-dialog-area-min-height, 200px);
+  z-index: 2;
+  position: relative;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+/* 打字機動畫 */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: currentColor }
+} 
