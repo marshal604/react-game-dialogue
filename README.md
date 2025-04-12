@@ -70,13 +70,13 @@ yarn add react-game-dialogue
 ### 最簡使用方式 Simplest Usage
 ```jsx
 // 1. 引入元件和CSS (最重要!)
-import { ReactDialogic } from '@marshal604/react-game-dialogue';
+import { ReactGameDialogue } from '@marshal604/react-game-dialogue';
 import '@marshal604/react-game-dialogue/dist/styles.css'; // 這非常重要！CSS樣式是必需的！
 
 // 2. 配置並使用元件
 function App() {
   return (
-    <ReactDialogic 
+    <ReactGameDialogue 
       characters={characters}  // 角色配置
       dialogue={dialogue}      // 對話內容
       startScene="start"       // 起始場景

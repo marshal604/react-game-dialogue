@@ -3,7 +3,7 @@ import { DialogContextProvider } from '../context/DialogContext';
 import { DialogSystem } from './DialogSystem';
 import { DialogueConfig, CharacterConfig, SequenceItem } from '../types';
 
-export interface ReactDialogicProps {
+export interface ReactGameDialogueProps {
   /**
    * 角色配置集合
    */
@@ -38,7 +38,7 @@ export interface ReactDialogicProps {
  * React Dialogic 統一入口組件
  * 將 DialogContextProvider 和 DialogSystem 封裝在一起，提供更簡單的使用方式
  */
-export const ReactDialogic: React.FC<ReactDialogicProps> = ({
+export const ReactGameDialogue: React.FC<ReactGameDialogueProps> = ({
   characters,
   dialogue,
   startScene,
