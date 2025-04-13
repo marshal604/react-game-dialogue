@@ -1,6 +1,6 @@
 {
   "name": "@marshal604/react-game-dialogue",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A React UI library for creating dialogue systems with a game-like interface | 一個專為 React 應用開發的對話系統 UI 套件，提供類遊戲風格的對話介面",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
