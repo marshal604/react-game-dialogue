@@ -13,8 +13,7 @@
     "dev": "rollup -c -w",
     "test": "jest",
     "lint": "eslint src --ext .ts,.tsx",
-    "prepare": "npm run build",
-    "publish": "npm publish --access public"
+    "prepare": "npm run build"
   },
   "repository": {
     "type": "git",
