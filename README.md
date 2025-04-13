@@ -26,32 +26,39 @@ React-Game-Dialogue is a comprehensive React dialogue system component library d
 ## ✨ 主要特性 Key Features
 
 ### 🖥️ 沉浸式顯示系統 Immersive Display System
+
 - 組件初始化時自動佔滿整個視窗/容器 | Components automatically fill the entire container
 - 響應式設計，適配不同屏幕尺寸 | Responsive design for all screen sizes
 
 ### 👥 角色配置系統 Character Configuration
+
 - 支援設定角色信息（名稱、圖片、顏色等）| Support for character settings (name, images, colors)
-- 多個表情/狀態的圖片管理 | Multiple emotion/state image management 
+- 多個表情/狀態的圖片管理 | Multiple emotion/state image management
 - 角色在對話中的位置控制 | Character positioning control
 
 ### 💬 對話框系統 Dialogue Box System
+
 - 打字機效果逐字顯示文本 | Typewriter effect for text display
 - 可調整文字顯示速度 | Adjustable text display speed
 - 支援文字特效和停頓 | Support for text effects and pauses
 
 ### 🔄 選項系統 Choice System
+
 - 支援對話選項分支 | Support for dialogue branching options
 - 選項結果影響後續對話流程 | Choices affecting dialogue flow
 - 條件性選項顯示 | Conditional option display
 
 ### 🎨 主題系統 Theme System
+
 - 支援自定義主題配置 | Support for custom theme configuration
 
 ### 🏞️ 背景管理 Background Management
+
 - 自定義背景圖片或顏色 | Custom background images or colors
 - 背景轉場效果 | Background transition effects
 
 ### 🔌 事件鉤子系統 Event Hook System
+
 - 完整的事件處理機制 | Comprehensive event handling
 - 自定義事件處理和遊戲邏輯整合 | Custom game logic integration
 
@@ -68,30 +75,33 @@ yarn add react-game-dialogue
 ## 📝 使用範例 Usage Examples
 
 ### 最簡使用方式 Simplest Usage
+
 ```jsx
 // 1. 引入元件和CSS (最重要!)
-import { ReactGameDialogue } from '@marshal604/react-game-dialogue';
-import '@marshal604/react-game-dialogue/dist/styles.css'; // 這非常重要！CSS樣式是必需的！
+import { ReactGameDialogue } from "@marshal604/react-game-dialogue";
+import "@marshal604/react-game-dialogue/dist/styles.css"; // 這非常重要！CSS樣式是必需的！
 
 // 2. 配置並使用元件
 function App() {
   return (
-    <ReactGameDialogue 
-      characters={characters}  // 角色配置
-      dialogue={dialogue}      // 對話內容
-      startScene="start"       // 起始場景
+    <ReactGameDialogue
+      characters={characters} // 角色配置
+      dialogue={dialogue} // 對話內容
+      startScene="start" // 起始場景
     />
   );
 }
 ```
 
 ### 程式碼範例 Code Examples
+
 詳細範例代碼可在此查看：https://github.com/marshal604/react-game-dialogue/tree/main/src/examples
 
 Detailed example code can be found here: https://github.com/marshal604/react-game-dialogue/tree/main/src/examples
 
 ### CSS 主題樣式 CSS Theme Styles
-CSS主題樣式可在此查看：https://github.com/marshal604/react-game-dialogue/blob/main/src/styles/theme.css
+
+CSS 主題樣式可在此查看：https://github.com/marshal604/react-game-dialogue/blob/main/src/styles/theme.css
 
 CSS theme styles can be viewed here: https://github.com/marshal604/react-game-dialogue/blob/main/src/styles/theme.css
 
@@ -145,12 +155,10 @@ React-Game-Dialogue 特別適合以下應用場景：
 
 </details>
 
-
 ---
 
 ## 相關連結 Links
 
-- [NPM Package](https://www.npmjs.com/package/react-game-dialogue)
+- [NPM Package](https://www.npmjs.com/package/@marshal604/react-game-dialogue)
 - [GitHub Repository](https://github.com/marshal604/react-game-dialogue)
 - [Bug Report](https://github.com/marshal604/react-game-dialogue/issues)
-- [Documentation](https://marshal604.github.io/react-game-dialogue/docs)
